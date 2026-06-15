@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+    <title>Noor Islam</title>
+    <link rel="stylesheet" href="noor.css"></head>
+<div id="backsBtn" onclick="goBack()">⬅ رجوع</div>
+<aside class="sidebar">
+<a href="home.html">🏠 الرئيسية</a>
+    <a href="quran.html">📖 القرآن الكريم</a>
+<a href="anasheed.html">🎙️ الأناشيد</a>
+<a href="mohadarat.html">🕌 المحاضرات</a>    
+</aside>
+
+</header>
+
+<style>
+    
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  margin: 0;
+  direction: rtl;
+}
+
+.header {
+  background: green;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  width: 180px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+  margin: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h2>📖 القرآن الكريم</h2>
+
+<div class="container">
+
+  <a href="sheikhhedan1.html">
+    <div class="caard">شيخ محمد الحيدان</div>
+  </a>
+
+
+</div>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</body>
+</html>

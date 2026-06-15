@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="موقع خاص لا الناشيد + القران + مقاطع الشيوخ ">
+    <meta name="keywords" content="Noor Islam , Islam , نور الاسلام , نور الأسلام , اناشيد , قران , Noor">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor Islam</title>
+    <link rel="stylesheet" href="noor.css"></head>
+</body>
+<div id="backsBtn" onclick="goBack()">⬅ رجوع</div>
+<aside class="sidebar">
+<a href="home.html">🏠 الرئيسية</a>
+    <a href="quran.html">📖 القرآن الكريم</a>
+<a href="anasheed.html">🎙️ الأناشيد</a>
+<a href="mohadarat.html">🕌 المحاضرات</a>
+    
+</aside>
+
+</header>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+  direction: rtl;
+}
+
+header {
+  background: green;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.box {
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: green;
+}
+
+hr {
+  margin: 20px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>نور الإسلام</h1>
+  <p>موقع لنشر القرآن الكريم والمحاضرات الدينية</p>
+</header>
+
+<div class="container">
+
+  <div class="box">
+    <h2>شو هو البرنامج؟</h2>
+    <p>
+      هذا الموقع يقدم فيديوهات دينية مثل القرآن الكريم، المحاضرات،
+      والأناشيد الإسلامية بطريقة سهلة وبسيطة للمستخدم.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>شو بقدم؟</h2>
+    <p>
+      - تلاوات قرآن<br>
+      - محاضرات دينية<br>
+      - أناشيد إسلامية<br>
+      - محتوى مفيد وسهل الوصول
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>شو تستفيد منه؟</h2>
+    <p>
+      تتعلم دينك بسهولة، وتسمع محتوى مفيد في أي وقت،
+      وتوصل لكل الفيديوهات بسرعة.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="box">
+    <h2>معلومات عني</h2>
+    <p>
+      الاسم: (حبيب نهاد طعمة)<br>
+      العمر: (15)<br>
+      البلد: فلسطين<br>
+      الهدف: إنشاء منصة سهلة لنشر المحتوى الإسلامي وتطوير مهاراتي في البرمجة
+    </p>
+  </div>
+
+</div>
+
+<script>
+function toggleQuran() {
+    let menu = document.getElementById("quranSub");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+function goBack() {
+  window.history.back();
+}
+
+// يختفي لما يبدأ الفيديو
+let video = document.getElementById("player");
+
+video.addEventListener("play", function() {
+  document.getElementById("backBtn").style.display = "none";
+});
+
+// يرجع يظهر لما يوقف
+video.addEventListener("pause", function() {
+  document.getElementById("backBtn").style.display = "block";
+});
+</script>
+
+</body>
+</html>

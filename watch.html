@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+    <title>Noor Islam</title>
+    <link rel="stylesheet" href="noor.css"></head>
+
+<div id="backsBtn" onclick="goBack()">⬅ رجوع</div>
+<aside class="sidebar">
+<a href="home.html">🏠 الرئيسية</a>
+    <a href="quran.html">📖 القرآن الكريم</a>
+<a href="anasheed.html">🎙️ الأناشيد</a>
+<a href="mohadarat.html">🕌 المحاضرات</a>    
+</aside>
+
+</header>
+
+<style>
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+video {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back">⬅ رجوع</a>
+
+<h2 id="title"></h2>
+
+<video id="player" controls></video>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("player").src = params.get("video");
+document.getElementById("title").innerText = params.get("title");
+function goBack() {
+  window.history.back();
+}
+
+</script>
+
+</body>
+</html>

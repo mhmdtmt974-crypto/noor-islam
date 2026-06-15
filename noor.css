@@ -1,0 +1,46 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: white;
+    border-right: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+.content {
+    margin-left: 230px;
+    padding: 20px;
+}
+.sidebar a{
+    display:block;
+    padding:15px;
+    text-decoration:none;
+    color:#0f9d58;
+}
+
+.sidebar a:hover{
+    background:#f0f0f0;
+}
+#backsBtn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 999;
+}
+.caard {
+  background: white;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}

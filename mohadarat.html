@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="موقع خاص لا الناشيد + القران + مقاطع الشيوخ ">
+    <meta name="keywords" content="Noor Islam , Islam , نور الاسلام , نور الأسلام , اناشيد , قران , Noor">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor Islam</title>
+    <link rel="stylesheet" href="noor.css"></head>
+</body>
+<div id="backsBtn" onclick="goBack()">⬅ رجوع</div>
+<aside class="sidebar">
+<a href="home.html">🏠 الرئيسية</a>
+    <a href="quran.html">📖 القرآن الكريم</a>
+<a href="anasheed.html">🎙️ الأناشيد</a>
+<a href="mohadarat.html">🕌 المحاضرات</a>
+</aside>
+
+</header>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        /* تنسيق زر الرجوع */
+        #backBtn {
+            display: inline-block;
+            background: #2d6a4f;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        #backBtn:hover {
+            background: #1e4620;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2d6a4f;
+            margin: 20px 0;
+        }
+
+        /* الشبكة مثل يوتيوب */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); /* جعل الشبكة متجاوبة مع الموبايل */
+            gap: 20px;
+            padding: 20px;
+            background: #eef2f0;
+            border-radius: 10px;
+        }
+
+        /* كرت الفيديو */
+        .card {
+            background: green;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #ddd;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        /* الرابط يحافظ على التنسيق */
+        .grid a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* الصورة المصغرة */
+        .card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        /* العنوان */
+        .card p {
+            text-align: center;
+            padding: 12px;
+            margin: 0;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- نقل زر الرجوع إلى هنا ليعمل بشكل صحيح -->
+
+<h1>محاضرات</h1>
+
+<div class="grid">
+
+  <!-- تم تعديل الرابط الأول ليفتح في صفحة المشاهدة أيضاً تماماً مثل البقية -->
+  <a href="watch.html?video=ahmdatebe.mp4&title=أحمد العربي">
+    <div class="card">
+      <img src="ahmdatebeon.png">
+      <p>كيف تصلح علاقتك مع الله لتشعر بلذة الايمان وراحة القلب</p>
+    </div>
+  </a>
+
+</div>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</body>
+</html>
